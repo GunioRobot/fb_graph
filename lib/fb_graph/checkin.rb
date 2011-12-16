@@ -32,7 +32,7 @@ module FbGraph
     end
 
     # == Search for recent check-ins for an authorized user and his or her friends:
-    # 
+    #
     #   FbGraph::Checkin.search(:access_token => ACCESS_TOKEN)
     #   # => Array of FbGraph::Checkin
     def self.search(options = {})

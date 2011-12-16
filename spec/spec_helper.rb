@@ -13,6 +13,6 @@ FakeWeb.allow_net_connect = false
 
 Spec::Runner.configure do |config|
   config.before(:all) do
-    
+
   end
 end

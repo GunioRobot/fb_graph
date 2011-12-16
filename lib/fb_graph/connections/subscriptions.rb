@@ -2,7 +2,7 @@ module FbGraph
   module Connections
     module Subscriptions
       # == Fetch current subscriptions
-      # 
+      #
       #   app = FbGraph::Application.new(APP_ID, :secret => APP_SECRET)
       #   app.subscriptions
       #   => Array of FbGraph::Subscriptions
@@ -15,11 +15,11 @@ module FbGraph
       end
 
       # == Subscribe
-      # 
+      #
       # Subscriber have to setup PubSubHubbub subscriber endpoint.
       # See details at "Subscription Verification" in the Facebook API document.
       # ref) http://developers.facebook.com/docs/api/realtime
-      # 
+      #
       #   app = FbGraph::Application.new(APP_ID, :secret => APP_SECRET)
       #   app.subscribe!(
       #     :object => "user",
@@ -34,11 +34,11 @@ module FbGraph
       end
 
       # == Subscribe
-      # 
+      #
       # Delete all of your subscriptions.
       # If you specify an object parameter, it will only delete the corresponding subscription.
       # ref) http://developers.facebook.com/docs/api/realtime
-      # 
+      #
       #   app = FbGraph::Application.new(APP_ID, :secret => APP_SECRET)
       #   app.unsubscribe!(
       #     :object => "user"

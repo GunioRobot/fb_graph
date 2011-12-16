@@ -5,9 +5,9 @@ module FbGraph
         options[:access_token] ||= self.access_token
         options[:access_token] ||= get_access_token(options[:secret]) if respond_to?(:get_access_token)
         if options[:metrics].nil?: insight_link = :insights
-        else 
+        else
         	insight_link = "insights/#{options[:metrics]}"
-        	insight_link += "/${options[:period]}" unless options[:period].nil? 
+        	insight_link += "/${options[:period]}" unless options[:period].nil?
         end
         insights = self.connection(insight_link, options)
         insights.map! do |insight|

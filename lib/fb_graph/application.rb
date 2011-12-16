@@ -26,19 +26,19 @@ module FbGraph
     end
 
     # == Get OAuth access token
-    # 
+    #
     # Obtain an OAuth access token associated with your application via the OAuth Client Credentials Flow.
-    # 
+    #
     # ref) http://developers.facebook.com/docs/api#analytics
-    # 
+    #
     #   app = FbGraph::Application.new(APP_ID)
     #   app.get_access_token
     #   # => access token as String
     #   app.access_token # once get_access_token is called, access token is cached.
     #   # => access token as String
-    # 
+    #
     # This method is automatically called when access token needed and application secret has already given.
-    # 
+    #
     #   app = FbGraph::Application.new(APP_ID, :secret => APP_SECRET)
     #   app.subscriptions # get_access_token is called automatically
     #   # => Array of FbGraph::Subscription

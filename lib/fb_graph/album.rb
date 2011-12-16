@@ -121,7 +121,7 @@ module FbGraph
       @privacy     = attributes[:privacy]
       @count       = attributes[:count]
       @type        = attributes[:type]
-      
+
       @created_time = if attributes[:created_time]
         Time.parse(attributes[:created_time]).utc
       end

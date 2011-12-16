@@ -54,7 +54,7 @@ Plus, you can play an Rails sample app here. http://fbgraphsample.heroku.com/
   user.friends
   user.tagged
   :
-  
+
   # Private connections requires "access_token"
   FbGraph::User.new('matake').friends # => raise FbGraph::Unauthorized
   user = FbGraph::User.fetch('matake', :access_token => ACCESS_TOKEN)
@@ -63,7 +63,7 @@ Plus, you can play an Rails sample app here. http://fbgraphsample.heroku.com/
   user.friends
   user.likes
   :
-  
+
   # "home" connection is only available for "me"
   me = User.new('me', :access_token => ACCESS_TOKEN)
   me.home
@@ -294,7 +294,7 @@ I'll add more documents or sample code.
 * FbGraph::Connections::Videos[http://rdoc.info/github/nov/fb_graph/master/FbGraph/Connections/Videos]
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a
